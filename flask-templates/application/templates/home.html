@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body_content %}
+{{title}}
+<h1>Home heading</h1>
+
+I am using a variable to write the following word... {{ title}}<br>
+I don't need to add a body tag because it is in the layouts page
+
+{% for post in posts %}
+<div>
+    <h3>{{ post.title }}</h3>
+    <p><b> - First name:</b>{{ post.name.first }}</p>
+    <p><b> - Last name:</b>{{ post.name.last }}</p>
+    <p> -- {{ post.content }}</p>
+</div>
+{% endfor %}
+{% endblock %}

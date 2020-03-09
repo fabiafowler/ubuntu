@@ -1,0 +1,4 @@
+pip3 install Flask
+pip3 freeze
+Flask==0.0.1
+Jinja==0.0.1
